@@ -1,12 +1,70 @@
-# React + Vite
+# TaskTrackr App
+# 📝 TaskTrackr App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**TaskTrackr** is a user-friendly Kanban-style task management app built with **React**. It supports multiple users with login/register functionality, admin control, draggable tasks, due date reminders, and a customizable board layout.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ **Authentication** – Login & Register with role-based access (Admin/User)
+ **Boards** – Create and manage multiple boards
+**Kanban Layout** – Drag-and-drop tasks between columns (To Do, In Progress, Completed)
+**Due Dates** – Tasks have deadlines
+**Task Status Tags** – Visual tags for task states
+**Custom Lists** – Add your own columns/lists dynamically
+   **Role-based Views**:
+  - Admin: Can view & delete all boards
+  - User: Can view & manage their own boards only
+**Settings Page** – Change username, email, and password
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Tech Stack
+
+- **Frontend:** React, React Router, Vite
+- **State Management:** useState, useEffect, localStorage
+- **Drag & Drop:** react-beautiful-dnd
+- **Styling:** Custom CSS / Tailwind (if used)
+- **Routing:** React Router DOM
+
+##  Folder Structure
+
+tasktrackr-app/
+├── public/
+├── src/
+│ ├── components/
+│ │ ├── Modal.jsx
+│ │ ├── AddListModal.jsx
+│ │ └── ConfirmModal.jsx
+│ ├── pages/
+│ │ ├── Dashboard.jsx
+│ │ ├── Board.jsx
+│ │ ├── Settings.jsx
+│ │ └── Profile.jsx
+│ ├── App.jsx
+│ ├── main.jsx
+│ └── App.css
+├── .gitignore
+├── package.json
+└── README.md
+
+
+## 🔧 Getting Started
+
+To run the app locally:
+
+# 1. Clone the repo
+git clone https://github.com/kainatmahmood/TaskTrackr-App.git
+
+# 2. Navigate into the folder
+cd TaskTrackr-App
+
+# 3. Install dependencies
+npm install
+
+# 4. Run the app
+npm run dev
+
+## Author
+@kainatmahmood
+
+ ## License
+This project is open source and free to use.
