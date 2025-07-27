@@ -1,5 +1,5 @@
 # TaskTrackr App
-# 📝 TaskTrackr App
+
 
 **TaskTrackr** is a user-friendly Kanban-style task management app built with **React**. It supports multiple users with login/register functionality, admin control, draggable tasks, due date reminders, and a customizable board layout.
 
